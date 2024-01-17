@@ -86,6 +86,7 @@ color: var(--linkcolor);
     line-height:1.5;
     letter-spacing:0.02em;
     color: var(--addlinkcolor);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .addlink:hover,
@@ -599,4 +600,19 @@ background-color: var(--linkcolor);
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+}
+.active-menu{
+    position: relative;
+    color: var(--linkcolor);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.active-menu::after{
+    content: "";
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+        position: absolute;
+        bottom: -1px;
+        left: 0;
 }
