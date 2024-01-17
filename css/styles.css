@@ -400,7 +400,7 @@ img {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .socialmedia_link:hover, 
@@ -445,6 +445,8 @@ background-color: var(--linkcolor);
     justify-content: center;
     color: var(--custumercolor);
     cursor: pointer;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .customer_link:focus,
@@ -511,6 +513,7 @@ background-color: var(--linkcolor);
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .socialmedia_icon:hover,
