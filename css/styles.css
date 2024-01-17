@@ -130,6 +130,7 @@ color: var(--linkcolor);
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 
@@ -399,6 +400,7 @@ img {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .socialmedia_link:hover, 
