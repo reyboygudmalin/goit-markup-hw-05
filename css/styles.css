@@ -611,7 +611,7 @@ background-color: var(--linkcolor);
         height: 4px;
         width: 100%;
         border-radius: 2px;
-        background-color: var(--accent-color);
+        background-color: var(--linkcolor);
         position: absolute;
         bottom: -1px;
         left: 0;
