@@ -8,6 +8,8 @@
     --bordercolor:#e7e9fc;
     --custumercolor:#8e8f99;
     --Iconcolor:#31d0aa;
+    --dairy:#fcfcfc;
+    --cornflower: #e7e9fc;
 
 }
 * {
@@ -529,4 +531,72 @@ background-color: var(--linkcolor);
 }
 .section_portfolio .container{
     flex-direction: column;
+}
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(46, 47, 66, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--cornflower);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover,
+.close-button:focus {
+    background-color: var(--linkcolor);
+    border: none;
+}
+
+.close-button:hover .close-icons,
+.close-button:focus .close-icons {
+    fill: var(--white);
+}
+
+.close-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--logocolor);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+    width: 408px;
+    height: 584px;
+    background-color: var(--dairy);
+    border-radius: 4px;
+    padding: 24px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    min-height: 584px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 }
